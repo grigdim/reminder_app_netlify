@@ -9,8 +9,8 @@ const Reminder = ({ reminder, handleDelete, handleCheck }) => {
 					<p className="date">{`This event is on: ${format(new Date(reminder.date), 'MMMM dd, yyyy pp')}`}</p>
 				{reminder.frequency !== 'do not repeat' && (
 					<p>
-						{`This reminder has a ${reminder.frequency} frequency and has been triggered ${reminder.triggered}
-						times`}
+							This reminder has a {reminder.frequency} frequency and has been triggered{' '}
+							{reminder.triggered}  {reminder.triggered === 1 ? 'time' : 'times'}
 					</p>
 				)}
 				</label>
