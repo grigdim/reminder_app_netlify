@@ -86,7 +86,6 @@ main {
   width: 75%;
 }
 .reminder {
-  width: 75%;
   background-color: lightgray;
   padding: 0 2%;
   margin: 2px auto;
@@ -106,17 +105,15 @@ main {
   padding: 2%;
 }
 .buttons {
-  width: 20%;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  align-items: center;
+  align-items: flex-end;
 }
 .checked,
 .delete {
   margin: 5px;
   padding: 5px;
-  width: 100%;
   border: none;
   color: white;
   font-weight: bold;
@@ -125,4 +122,7 @@ main {
 }
 .delete {
   background-color: rgba(255, 0, 0, 0.75);
+}
+.checked {
+  min-width: fit-content;
 }
