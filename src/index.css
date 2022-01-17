@@ -14,9 +14,9 @@ code {
     monospace;
 }
 .App {
-  height: 100vh;
+  height: 99vh;
   width: 75vw;
-  margin: 0.5px auto;
+  margin: 0 auto;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -77,14 +77,16 @@ main {
   box-shadow: 0 0 0 0.5px;
   border-radius: 5px;
   width: 50%;
-  background-color: rgba(0, 89, 255, 0.75)
+  background-color: rgba(0, 89, 255, 0.75);
 }
 .reminderList {
+  max-height: 50vh;
+  overflow-y: scroll;
   padding: 0%;
   width: 75%;
 }
 .reminder {
-  width: 100%;
+  width: 75%;
   background-color: lightgray;
   padding: 0 2%;
   margin: 2px auto;
